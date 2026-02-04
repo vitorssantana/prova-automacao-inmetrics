@@ -36,3 +36,9 @@ Os seguntes cenarios dentro da funcionalidade de stack foram cobertos:
   - npx playwright test
   - npx playwright test --ui (em modo debug)
   - npx playwright test --headed (em modo headless)
+ 
+#### CI/CD (GitHub Actions)
+- O workflow está configurado para rodar em toda push na branch main.
+- Modo Headless: Ativado automaticamente no ambiente Linux do GitHub.
+- Artefatos: Em caso de falha, o GitHub Actions anexa um Trace Viewer e Screenshots para depuração.
+- Relatórios: Disponíveis para download após cada execução na aba Actions.
