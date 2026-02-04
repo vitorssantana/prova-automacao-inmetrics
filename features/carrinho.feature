@@ -4,7 +4,7 @@
 
       Contexto:
       Dado que entro no site "https://www.advantageonlineshopping.com"
-      
+
 
       Cenário: Adicionar mais quantidadede de um mesmo produto ao carrinho
       Quando o usuário digita "HEADPHONES" na barra de busca
@@ -43,7 +43,6 @@
       E deve aparecer o botao "CONTINUE SHOPPING"
 
       Cenário: Verificar o total do carrinho após adicionar produtos
-      E o carrinho de compras está vazio
       Quando o usuário digita "HEADPHONES" na barra de busca
       E clica no ícone de lupa
       E clica no produto "BEATS STUDIO 2 OVER-EAR MATTE BLACK HEADPHONES" na lista de resultados
@@ -62,7 +61,6 @@
       | HP Z3200 WIRELESS MOUSE                        | 179.94 | 6          |
 
       Cenário: Realizar checkout a partir do carrinho de compras
-      E o carrinho de compras está vazio
       Quando o usuário digita "HEADPHONES" na barra de busca
       E clica no ícone de lupa
       E clica no produto "BEATS STUDIO 2 OVER-EAR MATTE BLACK HEADPHONES" na lista de resultados
