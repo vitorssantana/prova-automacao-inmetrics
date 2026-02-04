@@ -1,7 +1,6 @@
 import { expect } from '@playwright/test';
 import { Given, When, Then } from '../fixtures';
 import { DataTable } from '@cucumber/cucumber';
-import { log } from 'node:console';
 
 Given('que entro no site {string}', async ({ homePage }, url) => {
   await homePage.page.goto(url);
