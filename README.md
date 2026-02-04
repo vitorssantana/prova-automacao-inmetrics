@@ -15,12 +15,12 @@ Organização de Pastas:
   - src/utils/: Arquivos utilitarios do projeto
     - data-factory.ts: Gerador de massa de dados dinâmico (Usuario fake).
     - api-helper.ts: Métodos de apoio para setup via API (Criação de usuários).
-    - .github/workflows/: Configuração da esteira de CI/CD.
+  - .github/workflows/: Configuração da esteira de CI/CD.
 
 ### Cobertura de Testes
 Os seguntes cenarios dentro da funcionalidade de stack foram cobertos:
-  -Adicionar mais quantidadede de um mesmo produto ao carrinho
-  -Editar a quantidade de um produto já adicionado no carrinho
- - Remover os produtos do carrinho de compras
-  -Verificar o total do carrinho após adicionar produtos
- - Realizar checkout a partir do carrinho de compras
+   - Adicionar mais quantidadede de um mesmo produto ao carrinho
+   - Editar a quantidade de um produto já adicionado no carrinho
+   - Remover os produtos do carrinho de compras
+   - Verificar o total do carrinho após adicionar produtos
+   - Realizar checkout a partir do carrinho de compras
