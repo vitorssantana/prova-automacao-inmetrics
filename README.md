@@ -27,12 +27,14 @@ Os seguntes cenarios dentro da funcionalidade de stack foram cobertos:
 
 #### Como executar
 - Pre requisito: Node.js e npm instalados
-- Clone o repositório main
-- Instale as dependências
+- Clonar a branch main
+- Instalar as dependências
   - npm install
--  Instale os browsers do Playwright
+-  Instalar os browsers do Playwright
     - npx playwright install --with-deps
-- Execute os testes 
+-  Compilar a lista de passos que serao rodados na execucao dos testes
+    - npx bddgen
+- Executar os testes 
   - npx playwright test
   - npx playwright test --ui (em modo debug)
   - npx playwright test --headed (em modo headless)
