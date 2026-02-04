@@ -31,7 +31,7 @@ Os seguntes cenarios dentro da funcionalidade de stack foram cobertos:
 - Instale as dependências
   - npm install
 -  Instale os browsers do Playwright
-  - npx playwright install --with-deps
+    - npx playwright install --with-deps
 - Execute os testes 
   - npx playwright test
   - npx playwright test --ui (em modo debug)
