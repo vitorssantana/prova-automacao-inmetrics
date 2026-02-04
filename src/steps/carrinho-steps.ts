@@ -6,32 +6,24 @@ Given('que entro no site {string}', async ({ homePage }, url) => {
   await homePage.page.goto(url);
 });
 
-Given('o carrinho de compras está vazio', async ({ page }) => {
-  await page.evaluate(() => {
-    window.localStorage.clear();
-    window.sessionStorage.clear();
-  });
-  await page.reload();
-});
-
-When('o usuário digita {string} na barra de busca', async ({ homePage }, term) => {
-  await homePage.buscarProduto(term);
+When('o usuário digita {string} na barra de busca', async ({ homePage }, termo) => {
+  await homePage.buscarProduto(termo);
 });
 
 When('clica no ícone de lupa', async () => {
   // Este passo já está embutido no buscarProduto, mas mantemos para o fluxo do BDD
 });
 
-When('clica no produto {string} na lista de resultados', async ({ homePage }, product) => {
-  await homePage.selecionarProdutoDaLista(product);
+When('clica no produto {string} na lista de resultados', async ({ homePage }, produto) => {
+  await homePage.selecionarProdutoDaLista(produto);
 });
 
-When('clica no produto {string} na lista', async ({ homePage }, product) => {
-  await homePage.selecionarProdutoDaLista(product);
+When('clica no produto {string} na lista', async ({ homePage }, produto) => {
+  await homePage.selecionarProdutoDaLista(produto);
 });
 
-When('na página do produto, altera a quantidade para {int}', async ({ produtoPage }, qty) => {
-  await produtoPage.definirQuantidade(qty.toString());
+When('na página do produto, altera a quantidade para {int}', async ({ produtoPage }, qtd) => {
+  await produtoPage.definirQuantidade(qtd.toString());
 });
 
 When('clica no botão "ADD TO CART" na página do produto', async ({ produtoPage }) => {
@@ -55,8 +47,8 @@ When('o usuário abre o carrinho de compras', async ({ produtoPage }) => {
   await produtoPage.abrirCarrinho();
 });
 
-When('altera a quantidade do produto {string} para {int}', async ({ carrinhoPage }, product, qty) => {
-  await carrinhoPage.alterarQuantidade(product, qty.toString());
+When('altera a quantidade do produto {string} para {int}', async ({ carrinhoPage }, product, qtd) => {
+  await carrinhoPage.alterarQuantidade(product, qtd.toString());
 });
 
 Then('o carrinho de compras deve refletir a nova quantidade e valor total', async ({ carrinhoPage }, dataTable: DataTable) => {

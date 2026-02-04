@@ -4,7 +4,7 @@
 
       Contexto:
       Dado que entro no site "https://www.advantageonlineshopping.com"
-      E o carrinho de compras está vazio
+      
 
       Cenário: Adicionar mais quantidadede de um mesmo produto ao carrinho
       Quando o usuário digita "HEADPHONES" na barra de busca
