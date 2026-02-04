@@ -24,3 +24,15 @@ Os seguntes cenarios dentro da funcionalidade de stack foram cobertos:
    - Remover os produtos do carrinho de compras
    - Verificar o total do carrinho após adicionar produtos
    - Realizar checkout a partir do carrinho de compras
+
+#### Como executar
+- Pre requisito: Node.js e npm instalados
+- Clone o repositório main
+- Instale as dependências
+  - npm install
+-  Instale os browsers do Playwright
+  - npx playwright install --with-deps
+- Execute os testes 
+  - npx playwright test
+  - npx playwright test --ui (em modo debug)
+  - npx playwright test --headed (em modo headless)
